@@ -1,0 +1,24 @@
+{
+  "name": "learn-js-market",
+  "version": "1.0.0",
+  "description": "test",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matteusgad/learn-js-market.git"
+  },
+  "author": "Alexandr Matte",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matteusgad/learn-js-market/issues"
+  },
+  "homepage": "https://github.com/matteusgad/learn-js-market#readme"
+}
