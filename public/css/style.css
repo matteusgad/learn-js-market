@@ -1,0 +1,13 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+    padding: 10px 5px;
+}
+
+img {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #cccccc;
+}
