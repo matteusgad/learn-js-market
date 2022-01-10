@@ -27,20 +27,12 @@ app.get('/', function(req, res){
         'SELECT * FROM products',
         function(error, result){
             if (error) throw error
-            let products = {}
-            for(i=0;i<result.length;i++){
-                products[result[i]['id']] = result[i];
-            }
-        
-            res.render('main', {
-                products: JSON.parse(JSON.stringify(products))
+                res.render('main', {
+                    products: JSON.parse(JSON.stringify(result))
              });
 
         }
-    );
-
-    
-    
+    );    
 })
 
 app.get('/category', function(req, res){

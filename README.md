@@ -4,6 +4,7 @@ sudo apt install mysql
 sudo mysql
 
 CREATE USER 'market'@'localhost' IDENTIFIED BY 'market';
+ALTER USER 'market'@'localhost' IDENTIFIED WITH mysql_native_password BY 'market';
 
 CREATE DATABASE market;
 

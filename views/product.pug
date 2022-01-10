@@ -6,7 +6,7 @@ div(class='wrapper')
         div(class='container product-page')
             div(class='row')
                 div(class='col col-md-12')
-                    span(class='breadcrumbs') SITENAME/CATEGORY/PRODUCT
+                    include breadcrumbs
                 div(class='col col-md-4')
                     img(src='images/' + product[0]['image'])
                 div(class='col col-md-8')
@@ -18,5 +18,4 @@ div(class='wrapper')
                         data-products_id = product[0]['id']
                         class='btn btn-primary btn-block add-to-cart'
                     ) to Cart
-                
-        
+    include footer
