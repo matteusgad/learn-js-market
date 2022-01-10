@@ -1,4 +1,9 @@
 include header
 h2 PUG Heading render
-p foo: #{foo}
-p bar: #{bar}
+pre
+
+each val, index in products
+ pre #{val['name']}
+ img(
+     src = 'images/'+val['image']
+ )

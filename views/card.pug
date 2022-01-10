@@ -1,0 +1,15 @@
+div(class='col-sm')
+    div(class='card')
+        a(href='product?id='+val['id'])
+            h3(class='card-title text-center') #{val['name']}
+            img(
+                src='images/'+val['image']
+                class='card-images'
+            )
+            p(class='text-center') #{val['cost']} ₽
+            ul(class='card-actions')
+                li 
+                    button(
+                        data-products_id = val['id']
+                        class='btn btn-primary btn-block add-to-cart'
+                    ) to Cart

@@ -1,0 +1,22 @@
+include header
+div(class='wrapper')
+    div(class='content')
+        div(class='hat container')
+            include hat
+        div(class='container product-page')
+            div(class='row')
+                div(class='col col-md-12')
+                    span(class='breadcrumbs') SITENAME/CATEGORY/PRODUCT
+                div(class='col col-md-4')
+                    img(src='images/' + product[0]['image'])
+                div(class='col col-md-8')
+                    h2 #{product[0]['name']}
+                    p #{product[0]['description']}
+                    span COST: #{product[0]['cost']} RUR
+                    br
+                    button(
+                        data-products_id = product[0]['id']
+                        class='btn btn-primary btn-block add-to-cart'
+                    ) to Cart
+                
+        

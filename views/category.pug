@@ -1,0 +1,13 @@
+include header
+div(class='wrapper')
+    div(class='content')
+        div(class='hat container')
+            include hat
+        div(class='container product-page')
+            each val, index in category 
+                h2 Products from #{val['name']}
+                p #{val['description']}
+            
+            div(class='row')
+                each val, index in products
+                    include card
