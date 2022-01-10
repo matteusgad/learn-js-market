@@ -11,7 +11,7 @@ GRANT ALL PRIVILEGES ON market . * TO 'market'@'localhost';
 
 exit
 
-sudo mysql -u root -p market < market.sql
+sudo mysql -u root market < market.sql
 
 npm install
 
